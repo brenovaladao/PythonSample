@@ -24,5 +24,7 @@ public enum PythonLib {
         setenv("PYTHONPATH", "\(stdLibPath):\(libDynloadPath):\(resources)", 1)
 
         Py_Initialize()
+        
+        PythonLibrary.useVersion(3, 9)
     }
 }

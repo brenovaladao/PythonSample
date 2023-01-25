@@ -15,15 +15,24 @@ struct PythonEnvProject: App {
                 VStack {
                     Text("Tap the button to get the beatcuts from sample audion file")
                     
-                    Button(action: {
-                        viewModel.getBeatcuts()
-                    }, label: {
-                        Text("Tap me!")
-                    })
+                    HStack {
+                        Button(action: {
+                            viewModel.getBeatcuts(useLongMusic: true)
+                        }, label: {
+                            Text("Tap me! for long music")
+                        })
+                        
+                        Button(action: {
+                            viewModel.getBeatcuts(useLongMusic: false)
+                        }, label: {
+                            Text("Tap me! for short music")
+                        })
+                    }
                     
                     Text(viewModel.error ?? "")
                     
                     Text(viewModel.beatcuts.compactMap { String($0) }.joined(separator: ","))
+                        .lineLimit(3)
                 }
             
                 if viewModel.isLoading {
@@ -53,13 +62,13 @@ class SampleVM: ObservableObject {
 
     private let service: BeatcutsService = .init()
     
-    func getBeatcuts() {
+    private let longMusic = Bundle.main.path(forResource: "Gorillaz  Cracker Island ft Thundercat Official Video", ofType: "mp3")!
+    private let shortMusic = Bundle.main.path(forResource: "test_example", ofType: "m4a")!
+
+    func getBeatcuts(useLongMusic: Bool) {
         error = nil
-        
-        guard let path = Bundle.main.path(forResource: "test_example", ofType: "m4a") else {
-            error = "file not found"
-            return
-        }
+                
+        let path = useLongMusic ? longMusic : shortMusic
         
         isLoading = true
         

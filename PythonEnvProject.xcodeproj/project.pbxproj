@@ -16,6 +16,7 @@
 		40826FE82965E04400F6226A /* PythonEnvProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40826FE72965E04400F6226A /* PythonEnvProject.swift */; };
 		40C0411629797C0A0051DA7A /* BeatcutsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C0411529797C0A0051DA7A /* BeatcutsService.swift */; };
 		40C0411B29797C770051DA7A /* Beatcuts.py in Resources */ = {isa = PBXBuildFile; fileRef = 40C0411A29797C770051DA7A /* Beatcuts.py */; };
+		40DCA17D298165FC00986086 /* Gorillaz  Cracker Island ft Thundercat Official Video.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40DCA17C298165FC00986086 /* Gorillaz  Cracker Island ft Thundercat Official Video.mp3 */; };
 		40EA833E2981206100D65A6D /* test_example.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 403FE0C629811DAB00A199CD /* test_example.m4a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		40C0411529797C0A0051DA7A /* BeatcutsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatcutsService.swift; sourceTree = "<group>"; };
 		40C0411A29797C770051DA7A /* Beatcuts.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = Beatcuts.py; sourceTree = "<group>"; };
 		40C33B8D2965D34100733322 /* PythonEnvProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PythonEnvProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DCA17C298165FC00986086 /* Gorillaz  Cracker Island ft Thundercat Official Video.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gorillaz  Cracker Island ft Thundercat Official Video.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				403FE0C629811DAB00A199CD /* test_example.m4a */,
+				40DCA17C298165FC00986086 /* Gorillaz  Cracker Island ft Thundercat Official Video.mp3 */,
 				40C0411A29797C770051DA7A /* Beatcuts.py */,
 				400528892976FC9900097FDD /* PythonLib.swift */,
 				40826FE72965E04400F6226A /* PythonEnvProject.swift */,
@@ -180,6 +183,7 @@
 				400528872976FC5A00097FDD /* python-stdlib in Resources */,
 				400528BB2978082200097FDD /* librosa in Resources */,
 				40EA833E2981206100D65A6D /* test_example.m4a in Resources */,
+				40DCA17D298165FC00986086 /* Gorillaz  Cracker Island ft Thundercat Official Video.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
