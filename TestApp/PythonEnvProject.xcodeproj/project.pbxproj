@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		400528862976FC5300097FDD /* Python.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40671E122976FC3C006EF596 /* Python.xcframework */; };
+		400528872976FC5A00097FDD /* python-stdlib in Resources */ = {isa = PBXBuildFile; fileRef = 40671E132976FC3C006EF596 /* python-stdlib */; };
+		4005288A2976FC9900097FDD /* PythonLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400528892976FC9900097FDD /* PythonLib.swift */; };
+		400528BB2978082200097FDD /* librosa in Resources */ = {isa = PBXBuildFile; fileRef = 400528BA2978082200097FDD /* librosa */; };
+		406323EB29804F4100F581BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406323EA29804F4100F581BA /* SystemConfiguration.framework */; };
+		40671E032976F9BD006EF596 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 40671E022976F9BD006EF596 /* PythonKit */; };
+		40826FE82965E04400F6226A /* PythonEnvProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40826FE72965E04400F6226A /* PythonEnvProject.swift */; };
+		40C0411629797C0A0051DA7A /* BeatcutsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C0411529797C0A0051DA7A /* BeatcutsService.swift */; };
+		40C0411B29797C770051DA7A /* Beatcuts.py in Resources */ = {isa = PBXBuildFile; fileRef = 40C0411A29797C770051DA7A /* Beatcuts.py */; };
+		40EA833E2981206100D65A6D /* test_example.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 403FE0C629811DAB00A199CD /* test_example.m4a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40B1744A2965DA8A00804641 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		400528892976FC9900097FDD /* PythonLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonLib.swift; sourceTree = "<group>"; };
+		400528BA2978082200097FDD /* librosa */ = {isa = PBXFileReference; lastKnownFileType = folder; path = librosa; sourceTree = "<group>"; };
+		403FE0C629811DAB00A199CD /* test_example.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_example.m4a; sourceTree = "<group>"; };
+		406323EA29804F4100F581BA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		406323EC2980503800F581BA /* PythonEnvProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PythonEnvProject.entitlements; sourceTree = "<group>"; };
+		40671E122976FC3C006EF596 /* Python.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Python.xcframework; sourceTree = "<group>"; };
+		40671E132976FC3C006EF596 /* python-stdlib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "python-stdlib"; sourceTree = "<group>"; };
+		40826FE72965E04400F6226A /* PythonEnvProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PythonEnvProject.swift; sourceTree = "<group>"; };
+		40C0411529797C0A0051DA7A /* BeatcutsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatcutsService.swift; sourceTree = "<group>"; };
+		40C0411A29797C770051DA7A /* Beatcuts.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = Beatcuts.py; sourceTree = "<group>"; };
+		40C33B8D2965D34100733322 /* PythonEnvProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PythonEnvProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40C33B8A2965D34100733322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400528862976FC5300097FDD /* Python.xcframework in Frameworks */,
+				406323EB29804F4100F581BA /* SystemConfiguration.framework in Frameworks */,
+				40671E032976F9BD006EF596 /* PythonKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		406323E929804F4100F581BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				406323EA29804F4100F581BA /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40AB07352966C213009DFD5E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				403FE0C629811DAB00A199CD /* test_example.m4a */,
+				40C0411A29797C770051DA7A /* Beatcuts.py */,
+				400528892976FC9900097FDD /* PythonLib.swift */,
+				40826FE72965E04400F6226A /* PythonEnvProject.swift */,
+				40C0411529797C0A0051DA7A /* BeatcutsService.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		40C33B842965D34100733322 = {
+			isa = PBXGroup;
+			children = (
+				400528BA2978082200097FDD /* librosa */,
+				40671E132976FC3C006EF596 /* python-stdlib */,
+				40671E122976FC3C006EF596 /* Python.xcframework */,
+				40C33B8F2965D34100733322 /* PythonEnvProject */,
+				40C33B8E2965D34100733322 /* Products */,
+				406323E929804F4100F581BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40C33B8E2965D34100733322 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40C33B8D2965D34100733322 /* PythonEnvProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40C33B8F2965D34100733322 /* PythonEnvProject */ = {
+			isa = PBXGroup;
+			children = (
+				406323EC2980503800F581BA /* PythonEnvProject.entitlements */,
+				40AB07352966C213009DFD5E /* Application */,
+			);
+			path = PythonEnvProject;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40C33B8C2965D34100733322 /* PythonEnvProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C33BB22965D34200733322 /* Build configuration list for PBXNativeTarget "PythonEnvProject" */;
+			buildPhases = (
+				40C33B892965D34100733322 /* Sources */,
+				40C33B8A2965D34100733322 /* Frameworks */,
+				40C33B8B2965D34100733322 /* Resources */,
+				40B1744A2965DA8A00804641 /* Embed Frameworks */,
+				40671E0F2976FB3F006EF596 /* Sign Python Binary Modules */,
+				400528C429780AC300097FDD /* Python - Librosa dependencies  */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PythonEnvProject;
+			packageProductDependencies = (
+				40671E022976F9BD006EF596 /* PythonKit */,
+			);
+			productName = "Bluefilm-MacOS";
+			productReference = 40C33B8D2965D34100733322 /* PythonEnvProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40C33B852965D34100733322 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					40C33B8C2965D34100733322 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 40C33B882965D34100733322 /* Build configuration list for PBXProject "PythonEnvProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40C33B842965D34100733322;
+			packageReferences = (
+				40671E012976F9BD006EF596 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			productRefGroup = 40C33B8E2965D34100733322 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40C33B8C2965D34100733322 /* PythonEnvProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40C33B8B2965D34100733322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C0411B29797C770051DA7A /* Beatcuts.py in Resources */,
+				400528872976FC5A00097FDD /* python-stdlib in Resources */,
+				400528BB2978082200097FDD /* librosa in Resources */,
+				40EA833E2981206100D65A6D /* test_example.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		400528C429780AC300097FDD /* Python - Librosa dependencies  */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Python - Librosa dependencies ";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Contents/Resources/",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python3 -m pip install --target=\"${CODESIGNING_FOLDER_PATH}/Contents/Resources/\" librosa\n";
+		};
+		40671E0F2976FB3F006EF596 /* Sign Python Binary Modules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Sign Python Binary Modules";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "set -e\necho \"Signing as $EXPANDED_CODE_SIGN_IDENTITY_NAME ($EXPANDED_CODE_SIGN_IDENTITY)\"\nfind \"$CODESIGNING_FOLDER_PATH/Contents/Resources/python-stdlib/lib-dynload\" -name \"*.so\" -exec /usr/bin/codesign --force --sign \"$EXPANDED_CODE_SIGN_IDENTITY\" -o runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags --generate-entitlement-der {} \\;\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40C33B892965D34100733322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4005288A2976FC9900097FDD /* PythonLib.swift in Sources */,
+				40C0411629797C0A0051DA7A /* BeatcutsService.swift in Sources */,
+				40826FE82965E04400F6226A /* PythonEnvProject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		40C33BB02965D34200733322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Final Cut Pro communication";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40C33BB12965D34200733322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Final Cut Pro communication";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		40C33BB32965D34200733322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PythonEnvProject/PythonEnvProject.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PythonEnvProject;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Final Cut Pro communication";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		40C33BB42965D34200733322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PythonEnvProject/PythonEnvProject.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PythonEnvProject;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Final Cut Pro communication";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40C33B882965D34100733322 /* Build configuration list for PBXProject "PythonEnvProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C33BB02965D34200733322 /* Debug */,
+				40C33BB12965D34200733322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C33BB22965D34200733322 /* Build configuration list for PBXNativeTarget "PythonEnvProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C33BB32965D34200733322 /* Debug */,
+				40C33BB42965D34200733322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40671E012976F9BD006EF596 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40671E022976F9BD006EF596 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40671E012976F9BD006EF596 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 40C33B852965D34100733322 /* Project object */;
+}
