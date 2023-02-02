@@ -9,18 +9,23 @@ import Combine
 import Foundation
 import Python
 import PythonKit
+import SwiftShell
 
 struct BeatcutsService {
     
-    private let beatcutsQueue = DispatchQueue(label: "beatcuts.bg.queue", qos: .background)
+    private let beatcutsQueue = DispatchQueue(label: "beatcuts.bg.queue", qos: .userInitiated)
     
     func getBeatcutsCompletion(for path: String, completion: @escaping (Result<[Double], Swift.Error>) -> Void) {
         // It crashes if I try to run it `async`, with `sync` it works but blocks UI
-        beatcutsQueue.sync {
-            
-            let beatcuts = Python.import("Beatcuts")
-            
+
+        let beatcuts = Python.import("Beatcuts")
+
+        beatcutsQueue.async {
+            print("🔥 \(Thread.isMainThread)")
+                        
             let result = beatcuts.get_timestamps_from_audio(path)
+
+            print("🔥 \(result)")            
             
             if let error = BeatcutsServiceError(value: Int(result)) {
                 return completion(.failure(error))
