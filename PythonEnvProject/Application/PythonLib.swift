@@ -9,8 +9,8 @@ import Foundation
 import Python
 import PythonKit
 
-public enum PythonLib {
-    public static func setup() {
+enum PythonLib {
+    static func setup() {
         let bundle = Bundle.main
 
         guard
@@ -26,5 +26,9 @@ public enum PythonLib {
         Py_Initialize()
         
         PythonLibrary.useVersion(3, 9)
+        
+        Self.beatcuts = Python.import("Beatcuts")
     }
+    
+    static var beatcuts: PythonObject!
 }
